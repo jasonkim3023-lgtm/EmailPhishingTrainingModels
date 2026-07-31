@@ -1,32 +1,5 @@
 # Email Phishing Detection Using Machine Learning
 
-Classifying emails as **phishing** or **legitimate** from their subject and
-body text, using classical machine-learning models. Course project for
-**CSC4850 – Machine Learning (Summer 2026)**, Georgia State University.
-
-Three models — **Naive Bayes**, **Logistic Regression**, and a **linear SVM** —
-are trained on TF-IDF features and compared on accuracy, precision, recall,
-F1, and ROC-AUC.
-
-## Results
-
-Trained on the CEAS_08 corpus (39,115 emails after cleaning, 55.7% phishing),
-evaluated on a stratified 20% test set:
-
-| Model | Accuracy | Precision | Recall | F1 | ROC-AUC |
-|---|---|---|---|---|---|
-| Naive Bayes | 0.9821 | **0.9967** | 0.9711 | 0.9837 | 0.9990 |
-| Logistic Regression | 0.9942 | 0.9947 | 0.9950 | 0.9948 | 0.9996 |
-| **SVM (LinearSVC)** | **0.9967** | 0.9972 | **0.9968** | **0.9970** | **0.9998** |
-
-The linear SVM is the strongest overall. Naive Bayes has the highest
-precision but the lowest recall (it lets more phishing through).
-
-![Model comparison](results/model_comparison.png)
-
-![ROC curves](results/roc_curves.png)
-
-![Confusion matrices](results/confusion_matrices.png)
 
 ## Project structure
 
