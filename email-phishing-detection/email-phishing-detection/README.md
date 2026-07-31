@@ -64,14 +64,4 @@ jupyter notebook notebooks/phishing_detection.ipynb
 4. **Evaluation** — accuracy, precision, recall, F1, and ROC-AUC, plus ROC
    curves and confusion matrices.
 
-## Limitations
 
-- The legitimate emails in CEAS_08 are dominated by technical mailing-list
-  traffic, so the near-perfect scores partly reflect a "mailing-list vs.
-  everything else" split and may not transfer to a general inbox.
-- The number of URLs per email is **not** a useful signal in this corpus
-  (nearly identical across classes); message length is far more informative.
-
-## License
-
-Released under the [MIT License](LICENSE).
